@@ -8,6 +8,7 @@ int func(int n)
     int slast=func(n-2);
     return last+slast;
 }
+sdnfdslfdsfsdsdfds
 
 
 
