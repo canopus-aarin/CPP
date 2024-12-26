@@ -9,16 +9,16 @@ int Partition(vector<int> &arr,int low,int high){
     int j=high;
 
     while(i<j){
-        while(arr[i] <= pivot && i <=high-1){
-            i++;
+        while(arr[i] <= pivot && i <=high-1){       // We Are Doing High-1 Cause On Doing i++ It May Cross The Array...So Yeah
+            i++;                                //We Are Doing <= Cause If There Was Another Number Same As Pivot Then It Would Come On Left..
         }
-        while(arr[j] >= pivot && j>= low+1){
+        while(arr[j] > pivot && j>= low+1){    
             j--;
         }
         if(i<j) swap(arr[i],arr[j]);
     }
     swap(arr[low],arr[j]);
-    return j;
+    return j;                      // Partition Index Is Nothing More Than j.......(That Is pIndex).....
 }
 
 void Qs(vector<int> &arr, int low, int high){
