@@ -29,8 +29,8 @@ void Qs(vector<int> &arr, int low, int high){
     }
 }
 
-vector<int> QuickSort(vector<int> arr){
-    Qs(arr,0,arr.size()-1);
+   vector<int> QuickSort(vector<int> arr){
+   Qs(arr,0,arr.size()-1);
     return arr;
 }
 
