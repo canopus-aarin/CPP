@@ -17,9 +17,11 @@ int Partition(vector<int> &arr,int low,int high){
         }
         if(i<j) swap(arr[i],arr[j]);
     }
+
     swap(arr[low],arr[j]);
     return j;
 }
+
 
 void Qs(vector<int> &arr,int low,int high){
     if(low<high){
@@ -29,31 +31,31 @@ void Qs(vector<int> &arr,int low,int high){
     }
 }
 
+
 int main()
 {
-     int n;
-    cout<<"Enter The Number Of Elemets You Want In Array"<<endl;
+    int n;
+    cout<<"Enter The Number Of Elements That You Want In Array"<<endl;
     cin>>n;
 
     vector<int> arr(n);
 
-    cout<<"Enter Elements For The Array"<<endl;
+    cout<<"Enter The Elements For The Array"<<endl;
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
+    cout<<"Before Sorting The Array"<<endl;
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+        
+    }
+      cout<<endl;
+    Qs(arr,0,arr.size()-1);
 
-        cout<<"Before Sorting The Array"<<endl;
-        for(int i=0;i<n;i++){
-            cout<<arr[i]<<" ";
-        }
-        cout<<endl;
-        Qs(arr,0,arr.size()-1);
-
-        cout<<"After Sorting The Array"<<endl;
-        for(int i=0;i<n;i++){
-            cout<<arr[i]<<" ";
-        }
+    cout<<"After Sorting The Array"<<endl;
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
 
     return 0;
-
 }
