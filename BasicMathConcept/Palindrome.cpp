@@ -18,7 +18,7 @@ void Palindrome(int n){
 
 int main()
 {
-    int n;
+    int n; 
     cout<<"Enter Some Value For N"<<endl;
     cin>>n;
     Palindrome(n);
