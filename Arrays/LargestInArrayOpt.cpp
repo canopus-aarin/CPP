@@ -24,7 +24,7 @@ int main()
     int arr2[]={11,2,11,31,71,86};
      n=6;
      max=FindLargestElement(arr2,n);
-    cout<<"The Largest Element In The Array Is:"<<max<<endl;
+     cout<<"The Largest Element In The Array Is:"<<max<<endl;
 
 
     return 0;

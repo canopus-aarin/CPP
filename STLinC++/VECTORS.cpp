@@ -4,10 +4,6 @@
 using namespace std;
 
 
-
-
-
-
 int main()
 {
  vector<int> v;
@@ -63,7 +59,6 @@ for(; it!=v6.end();it++)
 cout<<*(it)<<" ";
 
 cout<<endl;
-
 
 
 vector<int> v7;
