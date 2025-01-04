@@ -11,7 +11,7 @@ void GetElements(int arr[],int n){
     int Ssmallest=arr[1];
     int Slargest=arr[n-2];
 
-    cout<<"Second Smallest IS:"<<Ssmallest<<endl;
+    cout<<"Second Smallest Is:"<<Ssmallest<<endl;
     cout<<"Second Largest Is:"<<Slargest<<endl;
 }
 
